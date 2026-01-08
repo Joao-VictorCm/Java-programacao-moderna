@@ -15,8 +15,12 @@ public class Datas {
 		Date y1 = sdf1.parse("25/06/2026");
 		Date y2 = sdf2.parse("25/01/2026 15:45:08");
 		
+		//data atual
+		Date x1 = new Date();
+		
 		System.out.println("y1: " + sdf2.format(y1));
 		System.out.println("y2: "+ sdf2.format(y2));
+		System.out.println("x1: "+ sdf2.format(x1));
 
 	}
 
