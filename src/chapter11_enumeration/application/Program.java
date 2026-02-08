@@ -16,7 +16,7 @@ public class Program {
 		
 		OrderStatus os1 = OrderStatus.PROCESSING;
 		
-		OrderStatus os2 = OrderStatus.valueOf("DELIVERED");
+		OrderStatus os2 = OrderStatus.valueOf("DELIVERED"); 
 		
 		System.out.println(os1+ " | " +os2);
 	}
