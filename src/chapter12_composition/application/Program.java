@@ -46,6 +46,15 @@ public class Program {
 			HourContract contract = new HourContract(contractDate, valuePerHour, hours);
 			worker.addContract(contract); //para ligar os contratos a classe trabalhador
 		}
+		
+		System.out.println();
+		System.out.print("Enter month and year to calculate income (MM/YYYY): ");
+		String monthAndYear = sc.next();
+		int month = Integer.parseInt(monthAndYear.substring(0, 2));
+		int year = Integer.parseInt(monthAndYear.substring(3));
+		System.out.println("Name: " +worker.getName());
+		System.out.println("Departament "+ worker.getDepartment().getName());
+		System.out.println("Income for "+ monthAndYear + ": " + worker.income(year, month));
 
 	}
 
